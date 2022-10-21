@@ -10,5 +10,11 @@ public class clientreg extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clientreg);
+         Button button = (Button) next;
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(clientreg.this, clientregis2.class));
+            }
+        });
     }
 }
