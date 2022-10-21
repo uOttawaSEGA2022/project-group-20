@@ -10,5 +10,10 @@ public class cookreg extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cookreg);
+                createCook.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                startActivity(new Intent(cookreg.this, MainActivity.class));
+            }
+        });
     }
 }
