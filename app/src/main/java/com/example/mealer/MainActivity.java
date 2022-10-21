@@ -11,4 +11,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
+    //Button button = (Button) buttonOfSignIn;
+    buttonOfSignIn.setOnClickListener(new View.OnClickListener() {
+    public void onClick(View v) {
+        startActivity(new Intent(MainActivity.this, welcomepage.class));
+            }
+        });
 }
