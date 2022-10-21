@@ -13,8 +13,13 @@ public class MainActivity extends AppCompatActivity {
     }
     //Button button = (Button) buttonOfSignIn;
     buttonOfSignIn.setOnClickListener(new View.OnClickListener() {
-    public void onClick(View v) {
-        startActivity(new Intent(MainActivity.this, welcomepage.class));
+        public void onClick(View v) {
+            startActivity(new Intent(MainActivity.this, welcomepage.class));
+                }
+        });
+    buttonOfCreate.setOnClickListener(new View.OnClickListener() {
+        public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, choice.class));
             }
         });
 }
