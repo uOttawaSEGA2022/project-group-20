@@ -1,0 +1,4 @@
+Below is the login for the adminstrator.
+
+username:admin
+password:adminpass
