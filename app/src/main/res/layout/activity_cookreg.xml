@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cookreg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20sp" />
+
+            <TextView
+                android:id="@+id/Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Sign Up "
+                android:textSize="30sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/firstNameField"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="(Enter your first name)"
+                    android:inputType="textPersonName"
+                    android:minWidth="50dp"
+                    android:minHeight="50dp" />
+
+                <TextView
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="First Name" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/lastNameField"
+                        android:layout_width="229dp"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="(Enter your last name)"
+                        android:inputType="textPersonName"
+                        android:minWidth="50dp"
+                        android:minHeight="50dp" />
+
+                    <TextView
+                        android:id="@+id/lastName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name" />
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="15sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/emailAddressField"
+                            android:layout_width="229dp"
+                            android:layout_height="wrap_content"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="(Enter email address)"
+                            android:inputType="textEmailAddress"
+                            android:minWidth="50dp"
+                            android:minHeight="50dp" />
+
+                        <TextView
+                            android:id="@+id/emailAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email Address" />
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/passwordField"
+                                android:layout_width="229dp"
+                                android:layout_height="wrap_content"
+                                android:ems="10"
+                                android:gravity="center"
+                                android:hint="(Enter a password)"
+                                android:inputType="textPassword"
+                                android:minWidth="50dp"
+                                android:minHeight="50dp" />
+
+                            <TextView
+                                android:id="@+id/password"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Password" />
+
+                            <Space
+                                android:layout_width="wrap_content"
+                                android:layout_height="15sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/postalAddressField"
+                                    android:layout_width="229dp"
+                                    android:layout_height="wrap_content"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:hint="(Enter postal address)"
+                                    android:inputType="textPostalAddress"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp" />
+
+                                <TextView
+                                    android:id="@+id/postalAddress"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Address" />
+
+                                <Space
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="10sp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:orientation="vertical">
+
+                                    <EditText
+                                        android:id="@+id/descriptionField"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:ems="10"
+                                        android:gravity="center|start|top"
+                                        android:hint="(Description of cook)"
+                                        android:inputType="textMultiLine"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp" />
+
+                                    <TextView
+                                        android:id="@+id/description"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="Short Description" />
+
+                                    <Space
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="10sp" />
+
+                                    <Button
+                                        android:id="@+id/createCook"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Create Account" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
