@@ -34,16 +34,15 @@ public class welcomepage extends AppCompatActivity {
         viewComplaints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //MainActivity activity = new MainActivity();
-                Intent intent = new Intent(welcomepage.this, ViewComplaintList.class );
-                startActivity(intent);
-                /*if(activity.flag == true){
-                    Intent intent = new Intent(welcomepage.this, ViewComplaints.class );
+                MainActivity activity = new MainActivity();
+
+                if(activity.flag == true){
+                    Intent intent = new Intent(welcomepage.this, ViewComplaintList.class );
                     startActivity(intent);
                 }
                 else{
                     Toast.makeText(welcomepage.this, "Only admins can view complaints", Toast.LENGTH_LONG).show();
-                }*/
+                }
             }
         });
 
