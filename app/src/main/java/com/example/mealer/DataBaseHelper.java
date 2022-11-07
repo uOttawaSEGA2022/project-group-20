@@ -8,24 +8,36 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
-public class DataBaseHelper extends SQLiteOpenHelper {
+public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "Login.db";
+    public static final String TABLE_NAME = "complaints";
+
+
+
 
     public DataBaseHelper(@Nullable Context context) {
         super(context, "Login.db", null, 1);
     }
 
-
     @Override
     public void onCreate(SQLiteDatabase MyDB) {
         MyDB.execSQL("create Table users(username TEXT primary key, password TEXT)");
 
+        String complaints = ("create Table complaints(complaint1 TEXT primary key, complaint2 TEXT, complaint3 TEXT, complaint4 TEXT, complaint5 TEXT)");
+        MyDB.execSQL(complaints);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase MyDB, int i, int i1) {
         MyDB.execSQL("drop Table if exists users");
+    }
+
+    public Cursor getComplaints() {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor res = MyDB.rawQuery("select * from " + TABLE_NAME,null);
+
+        return res;
     }
 
     public Boolean insertData(String username, String password) {
@@ -41,6 +53,24 @@ public class DataBaseHelper extends SQLiteOpenHelper {
         }
 
 
+    }
+
+    public Boolean addComplaints(String complaint1, String complaint2, String complaint3, String complaint4, String complaint5){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("complaint1", complaint1);
+        contentValues.put("complaint2", complaint2);
+        contentValues.put("complaint3", complaint3);
+        contentValues.put("complaint4", complaint4);
+        contentValues.put("complaint5", complaint5);
+        long result = MyDB.insert("complaints",null,contentValues);
+
+        if(result == -1){
+            return false;
+        }else{
+            return true;
+        }
     }
 
     public Boolean checkUser(String username) {

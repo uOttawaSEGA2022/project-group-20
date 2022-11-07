@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username, password;
     // DB reference
     DataBaseHelper DB;
+    public boolean flag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,8 +57,8 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 if(user.equals("admin") && pass.equals("adminpass")){
+                    flag = true;
                     Toast.makeText(MainActivity.this, "ADMIN", Toast.LENGTH_SHORT).show();
-
                     startActivity(new Intent(MainActivity.this, welcomepage.class));
                 }else{
                     Toast.makeText(MainActivity.this, "Login failed", Toast.LENGTH_SHORT).show();

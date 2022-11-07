@@ -59,6 +59,12 @@
                     android:layout_height="wrap_content"
                     android:text="Log Out" />
 
+                <Button
+                    android:id="@+id/viewComplaints"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="View Complaints" />
+
             </LinearLayout>
 
         </LinearLayout>
