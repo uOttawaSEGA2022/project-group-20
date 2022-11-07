@@ -35,7 +35,7 @@ public class welcomepage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //MainActivity activity = new MainActivity();
-                Intent intent = new Intent(welcomepage.this, ViewComplaints.class );
+                Intent intent = new Intent(welcomepage.this, ViewComplaintList.class );
                 startActivity(intent);
                 /*if(activity.flag == true){
                     Intent intent = new Intent(welcomepage.this, ViewComplaints.class );
