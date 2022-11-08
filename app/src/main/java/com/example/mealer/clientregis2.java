@@ -41,7 +41,9 @@ public class clientregis2 extends AppCompatActivity {
         createButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 Toast.makeText(clientregis2.this, "CLIENT", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(clientregis2.this, welcomepage.class));
+                Intent intent = new Intent(clientregis2.this,welcomepage.class);
+                intent.putExtra("flag",1);
+                startActivity(intent);
             }
         });
     }

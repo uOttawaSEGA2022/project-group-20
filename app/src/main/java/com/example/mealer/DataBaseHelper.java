@@ -90,6 +90,18 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
             return false;
 
     }
+
+    public int getRole(String username, String password) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        //String flag = "";
+        Cursor cursor = MyDB.rawQuery("Select * from users where username = ? and password = ?",new String[]{username, password});
+        //Log.d("MYTAG",flag);
+        cursor.moveToFirst();
+        int columnIndex = cursor.getColumnIndex("flag");
+        int flagValue = cursor.getInt(columnIndex);
+        //Log.d("MYTAG",flagValue+"Value");
+        return flagValue;
+    }
 }
 
 

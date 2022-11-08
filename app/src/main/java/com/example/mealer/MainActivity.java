@@ -43,25 +43,33 @@ public class MainActivity extends AppCompatActivity {
                 String user = username.getText().toString();
                 String pass = password.getText().toString();
 
-                if (user.equals("")||pass.equals(""))
-                    Toast.makeText(MainActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
-                else {
-                    Boolean checkuserpass = DB.checkInfo(user, pass);
-                    if (checkuserpass==true) {
-                        Toast.makeText(MainActivity.this, "Sign in success", Toast.LENGTH_SHORT).show();
-                        startActivity(new Intent(MainActivity.this, welcomepage.class));
-                    }
-                    else {
-                        //Toast.makeText(MainActivity.this, "Incorrrect Credentials", Toast.LENGTH_SHORT).show();
-                    }
-                }
-
                 if(user.equals("admin") && pass.equals("adminpass")){
                     flag = true;
                     Toast.makeText(MainActivity.this, "ADMIN", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(MainActivity.this, welcomepage.class));
+                    Intent intent = new Intent(MainActivity.this,welcomepage.class);
+                    intent.putExtra("flag",2);
+                    startActivity(intent);
+                    finish();
+                    //startActivity(new Intent(MainActivity.this, welcomepage.class));
                 }else{
-                    Toast.makeText(MainActivity.this, "Login failed", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(MainActivity.this, "Login failed", Toast.LENGTH_SHORT).show();
+                    if (user.equals("")||pass.equals(""))
+                        Toast.makeText(MainActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
+                    else {
+                        Boolean checkuserpass = DB.checkInfo(user, pass);
+                        if (checkuserpass==true) {
+                            int flagValue = DB.getRole(user,pass);
+                            Toast.makeText(MainActivity.this, "Flag value from DB"+flagValue, Toast.LENGTH_SHORT).show();
+                            Toast.makeText(MainActivity.this, "Sign in success", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent(MainActivity.this,welcomepage.class);
+                            intent.putExtra("flag",flagValue);
+                            startActivity(intent);
+                            finish();
+                        }
+                        else {
+                            Toast.makeText(MainActivity.this, "Incorrrect Credentials", Toast.LENGTH_SHORT).show();
+                        }
+                    }
                 }
             }
         });

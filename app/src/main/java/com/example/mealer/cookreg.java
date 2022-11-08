@@ -50,7 +50,9 @@ public class cookreg extends AppCompatActivity {
                         Boolean insert = DB.insertData(user, pass);
                         if (insert==true) {
                             Toast.makeText(cookreg.this, "Registered succesfully || COOK", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(cookreg.this, welcomepage.class));
+                            Intent intent = new Intent(cookreg.this,welcomepage.class);
+                            intent.putExtra("flag",0);
+                            startActivity(intent);
                         }
                         else {
                             Toast.makeText(cookreg.this, "Registration failed", Toast.LENGTH_SHORT).show();
