@@ -57,6 +57,7 @@ public class ViewComplaintList extends AppCompatActivity {
 
                 MyListAdapter listadapter = new MyListAdapter(this,R.layout.activity_array_adapter,theList);
                 listView.setAdapter(listadapter);
+                listadapter.notifyDataSetChanged();
 
 
             }
@@ -65,10 +66,13 @@ public class ViewComplaintList extends AppCompatActivity {
 
     public class MyListAdapter extends ArrayAdapter<String> {
         private int layout;
-
-        private MyListAdapter(Context context, int resource, List<String> objects) {
+        private ArrayList<String> objects;
+        private Context context;
+        private MyListAdapter(Context context, int resource, ArrayList<String> objects) {
             super(context, resource, objects);
-            layout = resource;
+            this.layout = resource;
+            this.objects = objects;
+            this.context = context;
         }
 
         @Override
@@ -79,6 +83,7 @@ public class ViewComplaintList extends AppCompatActivity {
                 convertView = inflater.inflate(layout, parent, false);
                 ViewHolder viewHolder = new ViewHolder();
                 viewHolder.complaint = (TextView) convertView.findViewById(R.id.ComplaintTextView);
+                viewHolder.complaint.setText(objects.get(position));
                 viewHolder.dismiss = (Button) convertView.findViewById(R.id.btn_dismiss);
                 viewHolder.suspend = (Button) convertView.findViewById(R.id.btn_suspend);
 
