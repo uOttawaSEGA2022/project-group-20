@@ -1,5 +1,6 @@
 package com.example.mealer;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 public class fragment1 extends Fragment  {
 
     Button add;
+    Button logout;
     EditText mealName;
     DataBaseHelper DB;
 
@@ -27,7 +29,9 @@ public class fragment1 extends Fragment  {
         //AddData
          View rootView = inflater.inflate(R.layout.fragment_fragment1, container, false);
          add = rootView.findViewById(R.id.addButton);
+         logout = rootView.findViewById(R.id.btnLogout);
          mealName = rootView.findViewById(R.id.mealName);
+
         DB = new DataBaseHelper(getActivity());
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +42,14 @@ public class fragment1 extends Fragment  {
                 }else{
                     Toast.makeText(getActivity(), "Meal cant be added", Toast.LENGTH_LONG).show();
                 }
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),MainActivity.class);
+                startActivity(intent);
             }
         });
          return rootView;
