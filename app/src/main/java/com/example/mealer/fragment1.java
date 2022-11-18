@@ -26,8 +26,8 @@ public class fragment1 extends Fragment  {
         // Inflate the layout for this fragment
         //AddData
          View rootView = inflater.inflate(R.layout.fragment_fragment1, container, false);
-         /*add = rootView.findViewById(R.id.addButton);
-         mealName = getView().findViewById(R.id.mealName);
+         add = rootView.findViewById(R.id.addButton);
+         mealName = rootView.findViewById(R.id.mealName);
         DB = new DataBaseHelper(getActivity());
         add.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +39,7 @@ public class fragment1 extends Fragment  {
                     Toast.makeText(getActivity(), "Meal cant be added", Toast.LENGTH_LONG).show();
                 }
             }
-        });*/
+        });
          return rootView;
     }
 }
