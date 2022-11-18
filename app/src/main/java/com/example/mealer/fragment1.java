@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.ArrayList;
-
 
 public class fragment1 extends Fragment  {
 
@@ -28,7 +26,7 @@ public class fragment1 extends Fragment  {
         // Inflate the layout for this fragment
         //AddData
          View rootView = inflater.inflate(R.layout.fragment_fragment1, container, false);
-         add = rootView.findViewById(R.id.addButton);
+         add = rootView.findViewById(R.id.offerButton);
          logout = rootView.findViewById(R.id.btnLogout);
          mealName = rootView.findViewById(R.id.mealName);
 

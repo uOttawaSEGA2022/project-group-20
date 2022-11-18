@@ -12,6 +12,9 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "Login.db";
     public static final String TABLE_NAME = "complaints";
+    public ContentValues menu = new ContentValues();
+    public ContentValues offeredMeals = new ContentValues();
+
 
 
 
@@ -28,6 +31,8 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         MyDB.execSQL(complaints);
 
         MyDB.execSQL("create Table meals(meal TEXT primary key)");
+
+        MyDB.execSQL("create Table offeredMeals(meal TEXT primary key)");
     }
 
     @Override
@@ -107,10 +112,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public Boolean addMeal(String meal){
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
-
         contentValues.put("meal", meal);
-        long result = MyDB.insert("meals",null,contentValues);
 
         if(result == -1){
             return false;
@@ -118,6 +120,21 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
             return true;
         }
     }
+    // this method allows the user to offer a meal from their menu
+    public Boolean offerMeal (String meal){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        if (menu.containsKey(meal)){
+            offeredMeals.put("meal", meal);
+                return true;
+
+        }
+        else{
+            return false;
+        }
+
+
+    }
+
 }
 
 
