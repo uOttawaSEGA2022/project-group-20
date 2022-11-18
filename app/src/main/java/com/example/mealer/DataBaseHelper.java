@@ -26,6 +26,8 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
         String complaints = ("create Table complaints(complaint1 TEXT primary key, complaint2 TEXT, complaint3 TEXT, complaint4 TEXT, complaint5 TEXT)");
         MyDB.execSQL(complaints);
+
+        MyDB.execSQL("create Table meals(meal TEXT primary key)");
     }
 
     @Override
@@ -101,6 +103,20 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         int flagValue = cursor.getInt(columnIndex);
         //Log.d("MYTAG",flagValue+"Value");
         return flagValue;
+    }
+
+    public Boolean addMeal(String meal){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("meal", meal);
+        long result = MyDB.insert("meals",null,contentValues);
+
+        if(result == -1){
+            return false;
+        }else{
+            return true;
+        }
     }
 }
 

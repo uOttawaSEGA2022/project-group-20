@@ -4,9 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.Button;
-import android.database.Cursor;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,6 +26,7 @@ public class welcomepage extends AppCompatActivity {
         setContentView(R.layout.activity_welcomepage);
         textView = findViewById(R.id.textlogin);
 
+
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
             flag = extras.getInt("flag");
@@ -35,30 +36,23 @@ public class welcomepage extends AppCompatActivity {
         }
         if(flag==0){
             textView.setText("You are logged in as Cook");
+            new Handler().postDelayed(() -> {
+                startActivity(new Intent(this, CookMainPage.class));
+                finish();
+            }, 5000);
         }else if(flag==1){
             textView.setText("You are logged in as Client");
         }else if(flag==2){
             textView.setText("You are logged in as Admin");
+            new Handler().postDelayed(() -> {
+                startActivity(new Intent(this, AdminMainPage.class));
+                finish();
+            }, 5000);
+
         }
 
 
-        //    textView = (TextView) findViewById(R.id.display); // add display to xml, make bool in db and universal
-
-      /*  if (isCook == true) {
-            textView.setText("You are logged in as cook");
-        }
-        else if (isCook == false) {
-            textView.setText("You are logged in as client");
-        }
-        else if (){
-            textView.setText("You are logged in as admin");
-        }
-*/
-
-        logOut = findViewById(R.id.logOut);
-        viewComplaints = findViewById(R.id.viewComplaints);
-
-        logOut.setOnClickListener(new View.OnClickListener() {
+        /*logOut.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 startActivity(new Intent(welcomepage.this, MainActivity.class));
                 finish();
@@ -78,7 +72,7 @@ public class welcomepage extends AppCompatActivity {
                     Toast.makeText(welcomepage.this, "Only admins can view complaints", Toast.LENGTH_LONG).show();
                 }
             }
-        });
+        });*/
 
     }
 
