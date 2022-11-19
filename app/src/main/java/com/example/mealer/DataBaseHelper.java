@@ -122,6 +122,20 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
             return true;
         }
     }
+    
+    public Boolean deleteMeal(String meal){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        menu.remove("meal");
+        long result = MyDB.delete("meals",null,this,);
+
+
+        if(result == -1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+    
     // this method allows the user to offer a meal from their menu
     public Boolean offerMeal (String meal){
         SQLiteDatabase MyDB = this.getWritableDatabase();
