@@ -83,10 +83,12 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     public Boolean checkUser(String username) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor cursor = MyDB.rawQuery("Select * from users where username = ?", new String[]{username});
-        if(cursor.getCount()>0)
+        if(cursor.getCount()>0) {
             return true;
-        else
+        }
+        else {
             return false;
+        }
     }
     public Boolean checkInfo(String username, String password) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
@@ -126,7 +128,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     public Boolean deleteMeal(String meal){
         SQLiteDatabase MyDB = this.getWritableDatabase();
         menu.remove("meal");
-        long result = MyDB.delete("meals",null,this,);
+        long result = MyDB.delete("meals",null,this);
 
 
         if(result == -1){
