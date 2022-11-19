@@ -136,6 +136,18 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
 
     }
+        // this method allows the user to remove a meal from their menu
+    public Boolean removeMeal(String meal) {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        if (menu.containsKey(meal)) {
+            offeredMeals.remove("meal");
+            return true;
+
+        } else {
+            return false;
+        }
+    }
+
 
 }
 
