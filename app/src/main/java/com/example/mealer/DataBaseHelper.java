@@ -112,7 +112,9 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public Boolean addMeal(String meal){
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        contentValues.put("meal", meal);
+        menu.put("meal", meal);
+        long result = MyDB.insert("meals",null,menu);
+        
 
         if(result == -1){
             return false;
