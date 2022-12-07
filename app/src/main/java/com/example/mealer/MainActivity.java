@@ -57,12 +57,18 @@ public class MainActivity extends AppCompatActivity {
                         Toast.makeText(MainActivity.this, "Please enter all fields", Toast.LENGTH_SHORT).show();
                     else {
                         Boolean checkuserpass = DB.checkInfo(user, pass);
+                        boolean isAccountSuspended = DB.isAccountSuspended(user);
+                        String suspendedDuration = DB.getSuspendedAccountDuration(user);
                         if (checkuserpass==true) {
+
                             int flagValue = DB.getRole(user,pass);
                             Toast.makeText(MainActivity.this, "Flag value from DB"+flagValue, Toast.LENGTH_SHORT).show();
                             Toast.makeText(MainActivity.this, "Sign in success", Toast.LENGTH_SHORT).show();
                             Intent intent = new Intent(MainActivity.this,welcomepage.class);
                             intent.putExtra("flag",flagValue);
+                            int isSuspended = isAccountSuspended==true? 1 : 0 ;
+                            intent.putExtra("isAccountSuspended",isSuspended);
+                            intent.putExtra("suspendedDuration",suspendedDuration);
                             startActivity(intent);
                             finish();
                         }

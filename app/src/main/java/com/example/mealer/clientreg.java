@@ -46,7 +46,7 @@ public class clientreg extends AppCompatActivity {
                 else {
                     //Boolean checkuser = DB.checkUser(user);
                     //if (checkuser==false) {
-                    Boolean insert = DB.insertData(user, pass);
+                    Boolean insert = DB.insertData(user, pass,1);
                     if (insert==true) {
                         Toast.makeText(clientreg.this, "", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(clientreg.this, clientregis2.class));

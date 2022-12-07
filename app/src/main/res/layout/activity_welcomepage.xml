@@ -43,7 +43,28 @@
                 android:textColor="@color/black"
                 android:textSize="30sp" />
 
+            <TextView
+                android:id="@+id/cookSuspendedMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="You have been suspended for x months"
+                android:textColor="@color/red"
+                android:visibility="gone"
+                android:textStyle="bold"
+                />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btnlogout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="50dp"
+            android:layout_centerInParent="true"
+            />
     </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

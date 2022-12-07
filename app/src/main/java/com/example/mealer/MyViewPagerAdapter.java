@@ -19,6 +19,10 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
                 return new fragment1();
             case 1:
                 return new fragment2();
+            case 2:
+                return new fragment3();
+            case 3:
+                return new fragment4();
             default:
                 return new fragment1();
         }
@@ -26,6 +30,6 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
 
     @Override
     public int getItemCount() {
-        return 2;
+        return 4;
     }
 }

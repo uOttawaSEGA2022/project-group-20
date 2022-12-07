@@ -8,25 +8,43 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
 
         <TextView
             android:id="@+id/ComplaintTextView"
-            android:layout_width="150dp"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="TextView"
+            android:layout_weight="0.35"
+            />
 
         <Button
             android:id="@+id/btn_dismiss"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Dismiss" />
+            android:text="Dismiss"
+            android:layout_weight="0.275"
+            />
+
+        <EditText
+            android:id="@+id/cookSuspendedDuration"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="0"
+            android:text="0"
+            android:layout_weight="0.10"
+            />
 
         <Button
             android:id="@+id/btn_suspend"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Suspend" />
+            android:text="Suspend"
+            android:layout_weight="0.275"
+            />
 
     </LinearLayout>
 

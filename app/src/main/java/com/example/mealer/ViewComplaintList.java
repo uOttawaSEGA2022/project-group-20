@@ -8,6 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -30,7 +31,7 @@ public class ViewComplaintList extends AppCompatActivity {
     final String complaint3 = "Under cooked";
     final String complaint4 = "Over cooked";
     final String complaint5 = "Food tasted salty";
-    ArrayList<String> theList = new ArrayList<>();
+    ArrayList<Cook_ComplaintMapping> theList = new ArrayList<>();
     //MyListAdapter listadapter = new MyListAdapter(this,R.layout.activity_array_adapter,theList);
 
     @Override
@@ -40,7 +41,14 @@ public class ViewComplaintList extends AppCompatActivity {
 
         ListView listView = (ListView) findViewById(R.id.listView);
         DB = new DataBaseHelper(this);
-        DB.addComplaints(complaint1, complaint2, complaint3, complaint4, complaint5);
+        DB.removeAllComplaints();
+        //DB.addComplaints(complaint1, complaint2, complaint3, complaint4, complaint5);
+        DB.addComplaints(complaint1,"cook1");
+        DB.addComplaints(complaint2,"cook1");
+        DB.addComplaints(complaint3,"cook1");
+        DB.addComplaints(complaint4,"cook1");
+        DB.addComplaints(complaint5,"cook1");
+
         //ArrayList<String> theList = new ArrayList<>();
         Cursor data = DB.getComplaints();
 
@@ -49,11 +57,14 @@ public class ViewComplaintList extends AppCompatActivity {
             Toast.makeText(this, "The database was empty", Toast.LENGTH_LONG).show();
         }else{
             while(data.moveToNext()){
-                theList.add(data.getString(0));
-                theList.add(data.getString(1));
+                Cook_ComplaintMapping cook_complaintMapping = new Cook_ComplaintMapping();
+                cook_complaintMapping.setComplain(data.getString(1));
+                cook_complaintMapping.setCook_username(data.getString(2));
+                theList.add(cook_complaintMapping);
+   /*             theList.add(data.getString(1));
                 theList.add(data.getString(2));
                 theList.add(data.getString(3));
-                theList.add(data.getString(4));
+                theList.add(data.getString(4));*/
 
                 MyListAdapter listadapter = new MyListAdapter(this,R.layout.activity_array_adapter,theList);
                 listView.setAdapter(listadapter);
@@ -64,11 +75,11 @@ public class ViewComplaintList extends AppCompatActivity {
         }
     }
 
-    public class MyListAdapter extends ArrayAdapter<String> {
+    public class MyListAdapter extends ArrayAdapter<Cook_ComplaintMapping> {
         private int layout;
-        private ArrayList<String> objects;
+        private ArrayList<Cook_ComplaintMapping> objects;
         private Context context;
-        private MyListAdapter(Context context, int resource, ArrayList<String> objects) {
+        private MyListAdapter(Context context, int resource, ArrayList<Cook_ComplaintMapping> objects) {
             super(context, resource, objects);
             this.layout = resource;
             this.objects = objects;
@@ -83,9 +94,10 @@ public class ViewComplaintList extends AppCompatActivity {
                 convertView = inflater.inflate(layout, parent, false);
                 ViewHolder viewHolder = new ViewHolder();
                 viewHolder.complaint = (TextView) convertView.findViewById(R.id.ComplaintTextView);
-                viewHolder.complaint.setText(objects.get(position));
+                viewHolder.complaint.setText(objects.get(position).getComplain());
                 viewHolder.dismiss = (Button) convertView.findViewById(R.id.btn_dismiss);
                 viewHolder.suspend = (Button) convertView.findViewById(R.id.btn_suspend);
+                viewHolder.cookSuspendedDuration = (EditText) convertView.findViewById(R.id.cookSuspendedDuration);
 
                 viewHolder.dismiss.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -97,15 +109,20 @@ public class ViewComplaintList extends AppCompatActivity {
                 viewHolder.suspend.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Toast.makeText(getContext(), "Cook suspended", Toast.LENGTH_SHORT).show();
-                        theList.remove(position);
-                        MyListAdapter.this.notifyDataSetChanged();
+                        if(viewHolder.cookSuspendedDuration.getText().toString().equals("0")){
+                            Toast.makeText(context, "Please enter suspend duration in months", Toast.LENGTH_SHORT).show();
+                        }else {
+                            boolean result = DB.suspendAccount(theList.get(position).getCook_username(),viewHolder.cookSuspendedDuration.getText().toString());
+                            Toast.makeText(getContext(), result+" Cook suspended"+theList.get(position).getCook_username(), Toast.LENGTH_SHORT).show();
+                            theList.remove(position);
+                            MyListAdapter.this.notifyDataSetChanged();
+                        }
                     }
                 });
                 convertView.setTag(viewHolder);
             }else{
                 mainViewHolder = (ViewHolder) convertView.getTag();
-                mainViewHolder.complaint.setText(theList.get(position));
+                mainViewHolder.complaint.setText(theList.get(position).getComplain());
                 MyListAdapter.this.notifyDataSetChanged();
             }
             return convertView;
@@ -116,5 +133,6 @@ public class ViewComplaintList extends AppCompatActivity {
         TextView complaint;
         Button dismiss;
         Button suspend;
+        EditText cookSuspendedDuration;
     }
 }
