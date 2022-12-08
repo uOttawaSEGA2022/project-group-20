@@ -26,7 +26,7 @@ public class MenuPage extends AppCompatActivity {
     String[] title;
     String[] description;
     int[] icon;
-    Button addToCart;
+    Button purchase;
     ArrayList<Model> arrayList = new ArrayList<>();
 
     @Override
@@ -47,11 +47,12 @@ public class MenuPage extends AppCompatActivity {
         //addToCart = findViewById(R.id.buttonCart);
 
 
-        /*DataBaseHelper DB = new DataBaseHelper(this);
+        DataBaseHelper DB = new DataBaseHelper(this);
 
         DB.addMeal("Pizza");
         DB.addMeal("Chicken");
         DB.addMeal("Fries");
+        DB.addMeal("Salad");
 
         Cursor data = DB.getMeals();
 
@@ -62,15 +63,16 @@ public class MenuPage extends AppCompatActivity {
                 Model model = new Model(data.getString(0),"this is description",R.drawable.meals_bg);
                 arrayList.add(model);
             }
-        }*/
+        }
 
-        for(int i = 0; i<title.length;i++){
+        /*for(int i = 0; i<title.length;i++){
             Model model = new Model(title[i], description[i],icon[0]);
             arrayList.add(model);
-        }
+        }*/
 
         adapter = new ListViewAdapter(this,arrayList);
         listView.setAdapter(adapter);
+
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -74,12 +75,15 @@ public class ListViewAdapter extends BaseAdapter {
         holder.mDescTv.setText(modellist.get(position).getDesc());
         holder.mIconTv.setImageResource(modellist.get(position).getIcon());
 
-        /*purchase.setOnClickListener(new View.OnClickListener() {
+        holder.purchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                //int count = DB.getCartItems().getCount();
+                //Toast.makeText(mContext, "Added to Menu", Toast.LENGTH_SHORT).show();
                 DB.addCart(modellist.get(position).getTitle());
+
             }
-        });*/
+        });
         /*view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

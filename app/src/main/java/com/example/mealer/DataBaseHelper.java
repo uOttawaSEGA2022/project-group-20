@@ -12,7 +12,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "Login.db";
     public static final String TABLE_NAME = "complaints";
-    public static final String TABLE_NAME_CART = "cart";
+    //public static final String TABLE_NAME_CART = "cart";
     public static final String TABLE_NAME_SUSPENDED_ACCOUNTS= "suspended_accounts";
     //public ContentValues menu = new ContentValues();
     public ContentValues offeredMeals = new ContentValues();
@@ -219,7 +219,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public Cursor getCartItems() {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor res = MyDB.rawQuery("select * from " + TABLE_NAME_CART,null);
+        Cursor res = MyDB.rawQuery("select * from cart",null);
 
         return res;
     }
@@ -296,7 +296,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public Cursor getMeals() {
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        Cursor res = MyDB.rawQuery("Select * from meals where meal = ?", null);
+        Cursor res = MyDB.rawQuery("Select * from meals", null);
 
         return res;
     }
