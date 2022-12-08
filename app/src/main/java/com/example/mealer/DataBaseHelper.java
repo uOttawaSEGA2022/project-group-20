@@ -12,6 +12,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "Login.db";
     public static final String TABLE_NAME = "complaints";
+    public static final String TABLE_NAME_CART = "cart";
     public static final String TABLE_NAME_SUSPENDED_ACCOUNTS= "suspended_accounts";
     //public ContentValues menu = new ContentValues();
     public ContentValues offeredMeals = new ContentValues();
@@ -36,6 +37,8 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         MyDB.execSQL("create Table meals(meal TEXT primary key)");
 
         MyDB.execSQL("create Table offeredMeals(meal TEXT primary key)");
+
+        MyDB.execSQL("create Table cart(meal TEXT primary key)");
 
 
     }
@@ -201,6 +204,28 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         }
     }
 
+    public Boolean addCart(String meal){
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put("cartmeal", meal);
+        long result = MyDB.insert("cart",null,contentValues);
+        if(result == -1){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    public Cursor getCartItems() {
+        SQLiteDatabase MyDB = this.getWritableDatabase();
+        Cursor res = MyDB.rawQuery("select * from " + TABLE_NAME_CART,null);
+
+        return res;
+    }
+
+
+
     public Boolean checkMealExist(String meal) {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor cursor = MyDB.rawQuery("Select * from meals where meal = ?", new String[]{meal});
@@ -275,6 +300,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
         return res;
     }
+
 
 
 

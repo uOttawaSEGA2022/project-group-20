@@ -34,7 +34,28 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Offered meals" />
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemDeleteMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete Meal" />
+
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemRemoveMeal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove Offered meal" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tabItemViewPurchases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase Requests" />
+
         </com.google.android.material.tabs.TabLayout>
+
+
 
         <androidx.viewpager2.widget.ViewPager2
             android:id ="@+id/viewpager"

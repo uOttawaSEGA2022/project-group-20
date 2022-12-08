@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextClock;
 import android.widget.TextView;
@@ -19,6 +20,8 @@ public class ListViewAdapter extends BaseAdapter {
     LayoutInflater inflater;
     List<Model> modellist;
     ArrayList<Model> arrayList;
+    Button purchase;
+    DataBaseHelper DB;
 
     public ListViewAdapter(Context mContext, List<Model> modellist) {
         mContext = mContext;
@@ -26,11 +29,13 @@ public class ListViewAdapter extends BaseAdapter {
         inflater = LayoutInflater.from(mContext);
         this.arrayList = new ArrayList<>();
         this.arrayList.addAll(modellist);
+        this.DB = new DataBaseHelper(mContext);
     }
 
     public class ViewHolder{
         TextView mTitleTv, mDescTv;
         ImageView mIconTv;
+        Button purchase;
     }
 
     @Override
@@ -58,6 +63,7 @@ public class ListViewAdapter extends BaseAdapter {
             holder.mTitleTv = view.findViewById(R.id.mainTitle);
             holder.mDescTv = view.findViewById(R.id.mainDesc);
             holder.mIconTv = view.findViewById(R.id.mainIcon);
+            holder.purchase = view.findViewById(R.id.purchase);
 
             view.setTag(holder);
 
@@ -68,7 +74,13 @@ public class ListViewAdapter extends BaseAdapter {
         holder.mDescTv.setText(modellist.get(position).getDesc());
         holder.mIconTv.setImageResource(modellist.get(position).getIcon());
 
-        view.setOnClickListener(new View.OnClickListener() {
+        /*purchase.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DB.addCart(modellist.get(position).getTitle());
+            }
+        });*/
+        /*view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if (modellist.get(position).getTitle().equals("Pizza")) {
@@ -91,7 +103,7 @@ public class ListViewAdapter extends BaseAdapter {
                 }
             }
 
-        });
+        });*/
         return view;
     }
 
