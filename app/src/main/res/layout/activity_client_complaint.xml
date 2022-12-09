@@ -37,7 +37,7 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName"
+                    android:id="@+id/MealName8"
                     android:layout_width="300dp"
                     android:layout_height="90dp"
                     android:ems="10"
@@ -48,7 +48,7 @@
                     android:minHeight="50dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName2"
+                    android:id="@+id/cookName9"
                     android:layout_width="300dp"
                     android:layout_height="90dp"
                     android:ems="10"
@@ -59,7 +59,7 @@
                     android:minHeight="50dp" />
 
                 <EditText
-                    android:id="@+id/editTextTextPersonName3"
+                    android:id="@+id/Reason3"
                     android:layout_width="300dp"
                     android:layout_height="238dp"
                     android:ems="10"
@@ -75,7 +75,7 @@
                     android:layout_height="52dp" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/submitButton4"
                     android:layout_width="300sp"
                     android:layout_height="wrap_content"
                     android:text="SUBMIT" />
