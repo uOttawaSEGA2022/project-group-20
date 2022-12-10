@@ -3,14 +3,20 @@ package com.example.mealer;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Entity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.sql.SQLData;
+
 public class ViewProfileAndRatingActivity extends MainActivity {
+    Button returnHome;
     DataBaseHelper DB;
+    String cookName, cookEmail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,21 +24,27 @@ public class ViewProfileAndRatingActivity extends MainActivity {
 
         TextView cookNameTextView = findViewById(R.id.cookName);
         TextView cookEmailTextView = findViewById(R.id.cookEmail);
-        TextView cookRatingTextView = findViewById(R.id.cookRating);
-        TextView cookDscriptionTextView = findViewById(R.id.cookDescription);
+        TextView cookDescriptionTextView = findViewById(R.id.cookDescription);
 
 
-        //DB.getCookProfileInfo(cookNameTextView, cookEmailTextView, cookRatingTextView, cookDscriptionTextView);
-    }
+        SharedPreferences description = getSharedPreferences("RatebyClient", MODE_PRIVATE);
 
-    public void displayCookInfo (TextView cookNameTextView, TextView cookEmailTextView,
-                                TextView cookRatingTextView, TextView cookDescriptionTextView,
-                                String cookName, String cookEmail, String cookRating, String cookDescription){
 
         cookNameTextView.setText("Name: " + cookName);
         cookEmailTextView.setText("Email: " + cookEmail);
-        cookRatingTextView.setText("Rating: " + cookRating + "/5");
-        cookDescriptionTextView.setText("Description: " + cookDescription);
+        cookDescriptionTextView.setText("Description: " + description);
+
+
+        returnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ViewProfileAndRatingActivity.this, MenuPage.class);
+
+            }
+        });
+    }
+
+}
 
     }
 }
