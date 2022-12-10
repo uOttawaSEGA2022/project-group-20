@@ -26,6 +26,14 @@
             android:textColor="@color/black"/>
 
 
+        <EditText
+            android:id="@+id/mn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Enter the meal name" />
+
         <TextView
             android:id="@+id/clientIdTextView"
             android:layout_width="match_parent"
@@ -49,3 +57,4 @@
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
+
