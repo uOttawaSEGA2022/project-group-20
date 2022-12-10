@@ -4,4 +4,5 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="PurchaseStatus">Your order is</string>
     <string name="Show">Show</string>
+    <string name="Status">Purchase Status</string>
 </resources>

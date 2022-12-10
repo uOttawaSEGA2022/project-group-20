@@ -8,6 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public static final String DBNAME = "Login.db";
@@ -20,7 +22,7 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     //Content values that creates a cart
     public ContentValues cart = new ContentValues();
     public final String CART_TABLE = "CART_TABLE";
-    public static final String MEAL_STATUS = "status";
+    public ArrayList<String> mcart = new ArrayList<>();
 
 
 
@@ -214,7 +216,8 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase MyDB = this.getWritableDatabase();
 
         cart.put(CARTMEAL, meal);
-        cart.put(MEAL_STATUS, "pending");
+        mcart.add(meal);
+        mcart.add("pending");
         long result = MyDB.insert(CART_TABLE,null,cart);
         if(result == -1){
             return false;
@@ -225,9 +228,13 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     }
     // Getter method to retrieve the purchase status of the meal
     public String getStatus(String key){
-        Object o = cart.get(key);
-        return o.toString();
+
+        int i = mcart.indexOf(key);
+        String s = mcart.get(i + 1);
+        return s;
     }
+
+
 
     public Cursor getCartItems() {
         SQLiteDatabase MyDB = this.getWritableDatabase();
