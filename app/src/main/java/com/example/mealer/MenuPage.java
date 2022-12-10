@@ -64,6 +64,16 @@ public class MenuPage extends AppCompatActivity {
                 arrayList.add(model);
             }
         }
+        
+        listView.setClickable(true);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                Intent intent = new Intent(MenuPage.this, NewActivity.class);
+                intent.putExtra("actionBarTitle", arrayList.get(position).getTitle());
+                String description = "Freshly cooked";
+                intent.putExtra("contentTv", description);
+                context.startActivity(intent);
 
         /*for(int i = 0; i<title.length;i++){
             Model model = new Model(title[i], description[i],icon[0]);
@@ -73,20 +83,6 @@ public class MenuPage extends AppCompatActivity {
         adapter = new ListViewAdapter(this,arrayList);
         listView.setAdapter(adapter);
 
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                int index = position;
-
-                if (arrayList.get(position).getTitle().equals("Pizza")) {
-                    Intent intent = new Intent(context, NewActivity.class);
-                    intent.putExtra("actionBarTitle", "Pizza");
-                    intent.putExtra("contentTv", "Ingredients");
-                    context.startActivity(intent);
-                }
-            }
-        });
     }
 
     @Override
