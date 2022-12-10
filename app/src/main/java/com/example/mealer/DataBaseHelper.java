@@ -14,8 +14,13 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
     public static final String TABLE_NAME = "complaints";
     //public static final String TABLE_NAME_CART = "cart";
     public static final String TABLE_NAME_SUSPENDED_ACCOUNTS= "suspended_accounts";
+    public static final String CARTMEAL = "cartmeal";
     //public ContentValues menu = new ContentValues();
     public ContentValues offeredMeals = new ContentValues();
+    //Content values that creates a cart
+    public ContentValues cart = new ContentValues();
+    public final String CART_TABLE = "CART_TABLE";
+    public static final String MEAL_STATUS = "status";
 
 
 
@@ -38,7 +43,8 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
         MyDB.execSQL("create Table offeredMeals(meal TEXT primary key)");
 
-        MyDB.execSQL("create Table cart(meal TEXT primary key)");
+        String crt = ("create Table CART_TABLE(meal TEXT primary key)");
+        MyDB.execSQL(crt);
 
 
     }
@@ -206,21 +212,26 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
 
     public Boolean addCart(String meal){
         SQLiteDatabase MyDB = this.getWritableDatabase();
-        ContentValues contentValues = new ContentValues();
 
-        contentValues.put("cartmeal", meal);
-        long result = MyDB.insert("cart",null,contentValues);
+        cart.put(CARTMEAL, meal);
+        cart.put(MEAL_STATUS, "pending");
+        long result = MyDB.insert(CART_TABLE,null,cart);
         if(result == -1){
             return false;
         }else{
             return true;
         }
+
+    }
+    // Getter method to retrieve the purchase status of the meal
+    public String getStatus(String key){
+        Object o = cart.get(key);
+        return o.toString();
     }
 
     public Cursor getCartItems() {
         SQLiteDatabase MyDB = this.getWritableDatabase();
         Cursor res = MyDB.rawQuery("select * from cart",null);
-
         return res;
     }
 

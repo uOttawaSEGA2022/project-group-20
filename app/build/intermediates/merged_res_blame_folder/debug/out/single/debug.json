@@ -1,122 +1,166 @@
 [
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_new.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_new.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_fragment_fragment1.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/fragment_fragment1.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_array_adapter.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_array_adapter.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/menu_menu.xml.flat",
+        "source": "com.example.mealer.app-main-31:/menu/menu.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_clientregis2.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_clientregis2.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.mealer.app-main-31:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/xml_backup_rules.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/xml/backup_rules.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_fragment_fragment5.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/fragment_fragment5.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_cook_main_page.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_cook_main_page.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/drawable__20221016200537.jpg.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/drawable/_20221016200537.jpg"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_main.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_client_complaint.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_client_complaint.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_choice.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_choice.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_fragment_fragment2.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/fragment_fragment2.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_fragment_fragment3.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/fragment_fragment3.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_cook_main_page.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_cook_main_page.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_welcomepage.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_welcomepage.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.mealer.app-main-31:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_menu_page.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_menu_page.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_main.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_cookreg.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_cookreg.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "com.example.mealer.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/xml/data_extraction_rules.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_clientreg.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_clientreg.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_clientreg.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_clientreg.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_view_complaint_list.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_view_complaint_list.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_cookreg.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_cookreg.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_array_adapter.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_array_adapter.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_choice.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_choice.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_fragment_fragment4.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/fragment_fragment4.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/drawable__20221016200537.jpg.flat",
+        "source": "com.example.mealer.app-main-31:/drawable/_20221016200537.jpg"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/drawable-v24_meals_bg.xml.flat",
+        "source": "com.example.mealer.app-main-31:/drawable-v24/meals_bg.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_view_complaint_list.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_view_complaint_list.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_admin_main_page.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_admin_main_page.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_view_profile_and_rating.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_view_profile_and_rating.xml"
     },
     {
-        "merged": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-merged_res-29:/layout_activity_admin_main_page.xml.flat",
-        "source": "/Users/eabustamantem/.gradle/daemon/7.4/com.example.mealer.app-main-31:/layout/activity_admin_main_page.xml"
+        "merged": "com.example.mealer.app-merged_res-29:/layout_fragment_fragment2.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/fragment_fragment2.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/xml_backup_rules.xml.flat",
+        "source": "com.example.mealer.app-main-31:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/layout_row_menu.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/row_menu.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.mealer.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_welcomepage.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_welcomepage.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_handle_request.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_handle_request.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_clientregis2.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_clientregis2.xml"
     },
     {
         "merged": "com.example.mealer.app-merged_res-29:/layout_fragment_fragment1.xml.flat",
         "source": "com.example.mealer.app-main-31:/layout/fragment_fragment1.xml"
+    },
+    {
+        "merged": "com.example.mealer.app-merged_res-29:/layout_activity_rateby_client.xml.flat",
+        "source": "com.example.mealer.app-main-31:/layout/activity_rateby_client.xml"
     }
 ]

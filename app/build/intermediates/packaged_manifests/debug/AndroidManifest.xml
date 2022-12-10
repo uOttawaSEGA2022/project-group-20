@@ -21,6 +21,20 @@
         android:testOnly="true"
         android:theme="@style/Theme.Mealer" >
         <activity
+            android:name="com.example.mealer.NewActivity"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name="com.example.mealer.MenuPage"
+            android:exported="false" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.example.mealer.CookMainPage"
             android:exported="false" >
             <meta-data

@@ -11,7 +11,7 @@
 9-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml
 10
 11    <application
-11-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:5:5-91:19
+11-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:5:5-105:19
 12        android:allowBackup="true"
 12-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,8 +34,8 @@
 22-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:13:9-44
 23        <activity
 23-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:15:9-21:20
-24            android:name="com.example.mealer.CookMainPage"
-24-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:16:13-41
+24            android:name="com.example.mealer.NewActivity"
+24-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:16:13-40
 25            android:exported="false" >
 25-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:17:13-37
 26            <meta-data
@@ -47,8 +47,8 @@
 29        </activity>
 30        <activity
 30-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:22:9-28:20
-31            android:name="com.example.mealer.AdminMainPage"
-31-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:23:13-42
+31            android:name="com.example.mealer.MenuPage"
+31-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:23:13-37
 32            android:exported="false" >
 32-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:24:13-37
 33            <meta-data
@@ -60,7 +60,7 @@
 36        </activity>
 37        <activity
 37-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:29:9-35:20
-38            android:name="com.example.mealer.ArrayAdapter"
+38            android:name="com.example.mealer.CookMainPage"
 38-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:30:13-41
 39            android:exported="false" >
 39-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:31:13-37
@@ -73,8 +73,8 @@
 43        </activity>
 44        <activity
 44-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:36:9-42:20
-45            android:name="com.example.mealer.welcomepage"
-45-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:37:13-40
+45            android:name="com.example.mealer.AdminMainPage"
+45-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:37:13-42
 46            android:exported="false" >
 46-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:38:13-37
 47            <meta-data
@@ -86,8 +86,8 @@
 50        </activity>
 51        <activity
 51-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:43:9-49:20
-52            android:name="com.example.mealer.cookreg"
-52-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:44:13-36
+52            android:name="com.example.mealer.ArrayAdapter"
+52-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:44:13-41
 53            android:exported="false" >
 53-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:45:13-37
 54            <meta-data
@@ -99,8 +99,8 @@
 57        </activity>
 58        <activity
 58-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:50:9-56:20
-59            android:name="com.example.mealer.clientregis2"
-59-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:51:13-41
+59            android:name="com.example.mealer.welcomepage"
+59-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:51:13-40
 60            android:exported="false" >
 60-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:52:13-37
 61            <meta-data
@@ -112,8 +112,8 @@
 64        </activity>
 65        <activity
 65-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:57:9-63:20
-66            android:name="com.example.mealer.clientreg"
-66-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:58:13-38
+66            android:name="com.example.mealer.cookreg"
+66-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:58:13-36
 67            android:exported="false" >
 67-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:59:13-37
 68            <meta-data
@@ -125,8 +125,8 @@
 71        </activity>
 72        <activity
 72-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:64:9-70:20
-73            android:name="com.example.mealer.choice"
-73-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:65:13-35
+73            android:name="com.example.mealer.clientregis2"
+73-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:65:13-41
 74            android:exported="false" >
 74-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:66:13-37
 75            <meta-data
@@ -138,8 +138,8 @@
 78        </activity>
 79        <activity
 79-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:71:9-77:20
-80            android:name="com.example.mealer.ViewComplaintList"
-80-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:72:13-46
+80            android:name="com.example.mealer.clientreg"
+80-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:72:13-38
 81            android:exported="false" >
 81-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:73:13-37
 82            <meta-data
@@ -150,51 +150,77 @@
 84-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:20:17-33
 85        </activity>
 86        <activity
-86-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:78:9-90:20
-87            android:name="com.example.mealer.MainActivity"
-87-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:79:13-41
-88            android:exported="true" >
-88-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:80:13-36
-89            <intent-filter>
-89-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:81:13-85:29
-90                <action android:name="android.intent.action.MAIN" />
-90-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:82:17-69
-90-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:82:25-66
-91
-92                <category android:name="android.intent.category.LAUNCHER" />
-92-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:84:17-77
-92-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:84:27-74
-93            </intent-filter>
-94
-95            <meta-data
-95-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:18:13-20:36
-96                android:name="android.app.lib_name"
-96-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:19:17-52
-97                android:value="" />
-97-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:20:17-33
-98        </activity>
-99
-100        <provider
-100-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-101            android:name="androidx.startup.InitializationProvider"
-101-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
-102            android:authorities="com.example.mealer.androidx-startup"
-102-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
-103            android:exported="false" >
-103-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
-104            <meta-data
-104-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-105                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-105-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-106                android:value="androidx.startup" />
-106-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
-107            <meta-data
-107-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eabustamantem/.gradle/caches/transforms-3/371d4428813d11175307b9e72a350208/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-108                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-108-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eabustamantem/.gradle/caches/transforms-3/371d4428813d11175307b9e72a350208/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-109                android:value="androidx.startup" />
-109-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eabustamantem/.gradle/caches/transforms-3/371d4428813d11175307b9e72a350208/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-110        </provider>
-111    </application>
-112
-113</manifest>
+86-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:78:9-84:20
+87            android:name="com.example.mealer.choice"
+87-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:79:13-35
+88            android:exported="false" >
+88-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:80:13-37
+89            <meta-data
+89-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:18:13-20:36
+90                android:name="android.app.lib_name"
+90-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:19:17-52
+91                android:value="" />
+91-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:20:17-33
+92        </activity>
+93        <activity
+93-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:85:9-91:20
+94            android:name="com.example.mealer.ViewComplaintList"
+94-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:86:13-46
+95            android:exported="false" >
+95-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:87:13-37
+96            <meta-data
+96-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:18:13-20:36
+97                android:name="android.app.lib_name"
+97-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:19:17-52
+98                android:value="" />
+98-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:20:17-33
+99        </activity>
+100        <activity
+100-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:92:9-104:20
+101            android:name="com.example.mealer.MainActivity"
+101-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:93:13-41
+102            android:exported="true" >
+102-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:94:13-36
+103            <intent-filter>
+103-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:95:13-99:29
+104                <action android:name="android.intent.action.MAIN" />
+104-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:96:17-69
+104-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:96:25-66
+105
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:98:17-77
+106-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:98:27-74
+107            </intent-filter>
+108
+109            <meta-data
+109-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:18:13-20:36
+110                android:name="android.app.lib_name"
+110-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:19:17-52
+111                android:value="" />
+111-->/Users/eabustamantem/Documents/GitHub/SEG2900/repos/project-group-20/app/src/main/AndroidManifest.xml:20:17-33
+112        </activity>
+113
+114        <provider
+114-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+115            android:name="androidx.startup.InitializationProvider"
+115-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+116            android:authorities="com.example.mealer.androidx-startup"
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+117            android:exported="false" >
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+118            <meta-data
+118-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+119                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+119-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+120                android:value="androidx.startup" />
+120-->[androidx.emoji2:emoji2:1.2.0] /Users/eabustamantem/.gradle/caches/transforms-3/ec6e2ba61c9a42dd8e0aa44ee71f9dfb/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+121            <meta-data
+121-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eabustamantem/.gradle/caches/transforms-3/371d4428813d11175307b9e72a350208/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+122                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+122-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eabustamantem/.gradle/caches/transforms-3/371d4428813d11175307b9e72a350208/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+123                android:value="androidx.startup" />
+123-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/eabustamantem/.gradle/caches/transforms-3/371d4428813d11175307b9e72a350208/transformed/lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+124        </provider>
+125    </application>
+126
+127</manifest>

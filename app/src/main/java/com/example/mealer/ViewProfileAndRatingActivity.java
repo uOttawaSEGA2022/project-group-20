@@ -22,7 +22,7 @@ public class ViewProfileAndRatingActivity extends MainActivity {
         TextView cookDscriptionTextView = findViewById(R.id.cookDescription);
 
 
-        DB.getCookProfileInfo(cookNameTextView, cookEmailTextView, cookRatingTextView, cookDscriptionTextView);
+        //DB.getCookProfileInfo(cookNameTextView, cookEmailTextView, cookRatingTextView, cookDscriptionTextView);
     }
 
     public void displayCookInfo (TextView cookNameTextView, TextView cookEmailTextView,
