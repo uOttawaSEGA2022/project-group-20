@@ -233,6 +233,12 @@ public class  DataBaseHelper extends SQLiteOpenHelper {
         String s = mcart.get(i + 1);
         return s;
     }
+    public void setStatus (String meal, String status){
+
+        int i = mcart.indexOf(meal);
+        mcart.set(i+1, status);
+
+    }
 
 
 
