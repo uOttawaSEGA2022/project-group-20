@@ -24,15 +24,15 @@ public class ViewProfileAndRatingActivity extends MainActivity {
 
         TextView cookNameTextView = findViewById(R.id.cookName);
         TextView cookEmailTextView = findViewById(R.id.cookEmail);
-        TextView cookDescriptionTextView = findViewById(R.id.cookDescription);
+        TextView cookDescriptionTextView = findViewById(R.id.cookRating);
 
 
-        SharedPreferences description = getSharedPreferences("RatebyClient", MODE_PRIVATE);
+        SharedPreferences cookRating = getSharedPreferences("RatebyClient", MODE_PRIVATE);
 
 
         cookNameTextView.setText("Name: " + cookName);
         cookEmailTextView.setText("Email: " + cookEmail);
-        cookDescriptionTextView.setText("Description: " + description);
+        cookDescriptionTextView.setText("Description: " + cookRating);
 
 
         returnHome.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +44,4 @@ public class ViewProfileAndRatingActivity extends MainActivity {
         });
     }
 
-}
-
-    }
 }
