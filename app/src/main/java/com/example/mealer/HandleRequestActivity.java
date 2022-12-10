@@ -22,6 +22,18 @@ public class HandleRequestActivity extends AppCompatActivity {
 
 
     }
+        public void approveButton(View view){
+        ContentValues cart = new ContentValues();
+        cart.put(MEAL_STATUS, "approve");
+        finish();
+
+    }
+    public void rejectButton(View view){
+        ContentValues cart = new ContentValues();
+        cart.put(MEAL_STATUS, "reject");
+        finish();
+    }
+
 
 
 }
