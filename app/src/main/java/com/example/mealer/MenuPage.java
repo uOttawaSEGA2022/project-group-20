@@ -60,7 +60,7 @@ public class MenuPage extends AppCompatActivity {
             Toast.makeText(context, "no meals in menu", Toast.LENGTH_SHORT).show();
         }else{
             while(data.moveToNext()){
-                Model model = new Model(data.getString(0),"this is description",R.drawable.meals_bg);
+                Model model = new Model(data.getString(0),"Cook rating: Great",R.drawable.meals_bg);
                 arrayList.add(model);
             }
         }
@@ -79,6 +79,8 @@ public class MenuPage extends AppCompatActivity {
             Model model = new Model(title[i], description[i],icon[0]);
             arrayList.add(model);
         }*/
+            }
+        });
 
         adapter = new ListViewAdapter(this,arrayList);
         listView.setAdapter(adapter);
