@@ -11,6 +11,10 @@ import java.util.ArrayList;
 public class HandleRequestActivity extends AppCompatActivity {
     DataBaseHelper DB;
     private ArrayList<String> purchasedMeals;
+    EditText text;
+    Cursor c = DB.getCartItems();
+    ArrayList<String> cart = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,20 +24,36 @@ public class HandleRequestActivity extends AppCompatActivity {
         Intent intent = getIntent();
         purchasedMeals = intent.getStringArrayListExtra("meals");
 
+        c.moveToFirst();
+        while(!c.isAfterLast()){
+            String cp = c.getString(0);
+            cart.add(cp);
+            c.moveToNext();
+        }
+
+
 
     }
-        public void approveButton(View view){
-        ContentValues cart = new ContentValues();
-        cart.put(MEAL_STATUS, "approve");
-        finish();
+    public void approveButton(View view){
+        text = (EditText) findViewById(R.id.mn2);
+        String meal = text.getText().toString();
+        if(cart.contains(meal)){
+            DB.setStatus(meal, "approved");
+        }
+        else{
+            Toast.makeText(this, "You don't have a purchase request for this meal",Toast.LENGTH_LONG).show();
+        }
+
+
 
     }
-    public void rejectButton(View view){
-        ContentValues cart = new ContentValues();
-        cart.put(MEAL_STATUS, "reject");
-        finish();
+    public void rejectButton(View view)       { 
+    text = (EditText) findViewById(R.id.mn2);
+    String meal = text.getText().toString();
+        if(cart.contains(meal)){
+        DB.setStatus(meal, "approved");
+        }
+        else{
+        Toast.makeText(this, "You don't have a purchase request for this meal",Toast.LENGTH_LONG).show();
+        }
     }
-
-
-
-}
