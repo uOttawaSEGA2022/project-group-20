@@ -30,7 +30,7 @@ public class ListViewAdapter extends BaseAdapter {
         inflater = LayoutInflater.from(mContext);
         this.arrayList = new ArrayList<>();
         this.arrayList.addAll(modellist);
-        this.DB = new DataBaseHelper(mContext);
+        DB = new DataBaseHelper(mContext);
     }
 
     public class ViewHolder{
@@ -66,11 +66,15 @@ public class ListViewAdapter extends BaseAdapter {
             holder.mIconTv = view.findViewById(R.id.mainIcon);
             holder.purchase = view.findViewById(R.id.purchase);
 
+
             view.setTag(holder);
+
 
         }else{
             holder = (ViewHolder) view.getTag();
         }
+
+
         holder.mTitleTv.setText(modellist.get(position).getTitle());
         holder.mDescTv.setText(modellist.get(position).getDesc());
         holder.mIconTv.setImageResource(modellist.get(position).getIcon());
@@ -78,12 +82,13 @@ public class ListViewAdapter extends BaseAdapter {
         holder.purchase.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //int count = DB.getCartItems().getCount();
-                //Toast.makeText(mContext, "Added to Menu", Toast.LENGTH_SHORT).show();
-                DB.addCart(modellist.get(position).getTitle());
-
+                String title = modellist.get(position).getTitle();
+                DB.addCart(title);
+                Toast.makeText(view.getContext(), "Added to Cart", Toast.LENGTH_SHORT).show();
             }
         });
+
+
         /*view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
